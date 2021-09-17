@@ -4,10 +4,7 @@ from django.contrib.postgres.fields import ArrayField
 
 class pokemon(models.Model):
         name = models.CharField(max_length=255)
-        # Types = ArrayField(
-        #     models.CharField(max_length=255),
-        #     size=4
-        # )
+        Types = models.TextField()
         Hp = models.BigIntegerField()
         Attack = models.BigIntegerField()
         Defence = models.BigIntegerField()
